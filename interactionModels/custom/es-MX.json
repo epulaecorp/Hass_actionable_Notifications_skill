@@ -1,0 +1,118 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": [
+            "okey",
+            "ok",
+            "genial",
+            "bueno vale",
+            "está bien",
+            "bueno",
+            "venga",
+            "venga vale",
+            "vale",
+            "perfecto",
+            "perfect",
+            "si gracias",
+            "si",
+            "zaz",
+            "yes"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": [
+            "no"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "Selections",
+              "type": "Selections"
+            }
+          ],
+          "name": "Select",
+          "samples": [
+            "{Selections}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "Numbers",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "Number",
+          "samples": [
+            "{Numbers}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "Durations",
+              "type": "AMAZON.DURATION"
+            }
+          ],
+          "name": "Duration",
+          "samples": [
+            "{Durations}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "Amazon",
+                  "Amazon Video"
+                ],
+                "value": "Amazon Prime"
+              }
+            },
+            {
+              "name": {
+                "value": "Hulu"
+              }
+            },
+            {
+              "name": {
+                "value": "YouTube"
+              }
+            },
+            {
+              "name": {
+                "value": "Netflix"
+              }
+            }
+          ],
+          "name": "Selections"
+        }
+      ],
+      "invocationName": "custom actions"
+    }
+  }
+}
